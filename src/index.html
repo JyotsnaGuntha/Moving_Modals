@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic OSI Model</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <h1>The OSI Model</h1>
+        <p>A basic guide to the 7 layers of networking. Click a layer to see its description.</p>
+
+        <div class="osi-stack">
+            <div class="osi-layer layer-7 keyword" data-title="Application Layer (Layer 7)" data-definition="This layer interacts with user data. Protocols include HTTP, FTP, and DNS.">
+                <span>Application</span>
+            </div>
+            <div class="osi-layer layer-6 keyword" data-title="Presentation Layer (Layer 6)" data-definition="This layer handles data translation, encryption, and compression, using formats like SSL, JPEG, and ASCII.">
+                <span>Presentation</span>
+            </div>
+            <div class="osi-layer layer-5 keyword" data-title="Session Layer (Layer 5)" data-definition="This layer manages connections (sessions) between applications using APIs and RPCs.">
+                <span>Session</span>
+            </div>
+            <div class="osi-layer layer-4 keyword" data-title="Transport Layer (Layer 4)" data-definition="This layer provides reliable data transfer using protocols like TCP and UDP.">
+                <span>Transport</span>
+            </div>
+            <div class="osi-layer layer-3 keyword" data-title="Network Layer (Layer 3)" data-definition="This layer handles logical addressing and routing using the Internet Protocol (IP). Routers operate here.">
+                <span>Network</span>
+            </div>
+            <div class="osi-layer layer-2 keyword" data-title="Data Link Layer (Layer 2)" data-definition="This layer manages physical addressing using MAC Addresses. Network Switches operate here.">
+                <span>Data Link</span>
+            </div>
+            <div class="osi-layer layer-1 keyword" data-title="Physical Layer (Layer 1)" data-definition="This layer transmits raw data bits over physical hardware like cables and fiber optics.">
+                <span>Physical</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
