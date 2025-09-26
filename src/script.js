@@ -23,16 +23,14 @@ function createModal(title, content) {
     newModal.className = 'modal';
     newModal.id = `modal_for_${title.replace(/\s+/g, '_')}`;
 
-    if (window.innerWidth > 768) {
-        const topPosition = 100 + (modalCounter * 20);
-        const leftPosition = 100 + (modalCounter * 20);
-        newModal.style.top = topPosition + 'px';
-        newModal.style.left = leftPosition + 'px';
-    }
-
     // stagger new modals slightly so each is visible
     const topPosition = 100 + (modalCounter * 20);
     const leftPosition = 100 + (modalCounter * 20);
+    if (window.innerWidth <= 768) {
+        // set different positions for small screens
+        topPosition = 50;
+        leftPosition = 50;
+    }
     newModal.style.top = topPosition + 'px';
     newModal.style.left = leftPosition + 'px';
 
@@ -142,4 +140,5 @@ function dragElement(elmnt) {
         document.onmouseup = null;
         document.onmousemove = null;
     }
+
 }
